@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class HeroeTarjetaComponent implements OnInit {
   @Input() heroe: any = {};
   @Input() index: number;
-  @Output heroeSeleccionado:EventEmitter<number>;
+  @Output() heroeSeleccionado:EventEmitter<number>;
   constructor(private router:Router) {
     this.heroeSeleccionado= new EventEmitter();
   }
